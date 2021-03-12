@@ -14,6 +14,6 @@ export default class GalacticAge {
   };
 
   marsAge() {
-
+    return Math.floor(this.age/1.88);
   };
 };
