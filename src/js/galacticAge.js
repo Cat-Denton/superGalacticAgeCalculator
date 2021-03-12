@@ -4,4 +4,8 @@ export default class GalacticAge {
     this.age = age;
     this.lifeExpectancy = lifeExpectancy;
   };
+
+  mercuryAge() {
+
+  }
 };
