@@ -8,4 +8,8 @@ export default class GalacticAge {
   mercuryAge() {
     return Math.floor(this.age/.24);
   };
+
+  venusAge() {
+
+  };
 };
