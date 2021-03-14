@@ -31,29 +31,42 @@ export default class GalacticAge {
 
   yearsToLiveMerc() {
     const yearsToLiveMerc = Math.floor(this.lifeExpectancy/this.mercuryDiv)-Math.floor(this.age/this.mercuryDiv);
-    // if (yearsToLiveMerc >= 0) {
-      return `You have ${yearsToLiveMerc} years to live on Mercury.`
-    // } else {
-    //   x = Math.abs(yearsToLiveMerc);
-    //   return `You should have died ${x} years ago on Mercury!`
-    // }
+    if (yearsToLiveMerc >= 0) {
+      return `You have ${yearsToLiveMerc} years to live on Mercury.`;
+    } else {
+      const x = Math.abs(yearsToLiveMerc);
+      return `You should have died ${x} years ago on Mercury!`;
+    };
   };
 
   yearsToLiveVenus() {
     const yearsToLiveVenus = Math.floor(this.lifeExpectancy/this.venusDiv)-Math.floor(this.age/this.venusDiv);
-
-    return `You have ${yearsToLiveVenus} years to live on Venus.`
+    if (yearsToLiveVenus >= 0) {
+      return `You have ${yearsToLiveVenus} years to live on Venus.`
+    } else {
+      const x = Math.abs(yearsToLiveVenus);
+      return `You should have died ${x} years ago on Venus!`;
+    };    
   };
 
   yearsToLiveMars() {
     const yearsToLiveMars = Math.floor(this.lifeExpectancy/this.marsDiv)-Math.floor(this.age/this.marsDiv);
-
-    return `You have ${yearsToLiveMars} years to live on Mars.`
+    if (yearsToLiveMars >= 0) {
+      return `You have ${yearsToLiveMars} years to live on Mars.`;
+    } else {
+      const x = Math.abs(yearsToLiveMars);
+      return `You should have died ${x} years ago on Mars!`;
+    };    
   };
 
   yearsToLiveJupiter() {
     const yearsToLiveJupiter = Math.floor(this.lifeExpectancy/this.jupiterDiv)-Math.floor(this.age/this.jupiterDiv);
 
-    return `You have ${yearsToLiveJupiter} years to live on Jupiter.`
+    if (yearsToLiveJupiter >= 0) {
+      return `You have ${yearsToLiveJupiter} years to live on Jupiter.`
+    } else {
+      const x = Math.abs(yearsToLiveJupiter);
+      return `You should have died ${x} years ago on Jupiter!`;
+    };    
   };
 };
