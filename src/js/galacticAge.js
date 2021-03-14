@@ -30,18 +30,26 @@ export default class GalacticAge {
   };
 
   yearsToLiveMerc() {
-    return Math.floor(this.lifeExpectancy/this.mercuryDiv)-Math.floor(this.age/this.mercuryDiv);
+    const yearsToLiveMerc = Math.floor(this.lifeExpectancy/this.mercuryDiv)-Math.floor(this.age/this.mercuryDiv);
+
+    return `You have ${yearsToLiveMerc} years to live on Mercury.`
   };
 
   yearsToLiveVenus() {
-    return Math.floor(this.lifeExpectancy/this.venusDiv)-Math.floor(this.age/this.venusDiv);
+    const yearsToLiveVenus = Math.floor(this.lifeExpectancy/this.venusDiv)-Math.floor(this.age/this.venusDiv);
+
+    return `You have ${yearsToLiveVenus} years to live on Venus.`
   };
 
   yearsToLiveMars() {
-    return Math.floor(this.lifeExpectancy/this.marsDiv)-Math.floor(this.age/this.marsDiv);
+    const yearsToLiveMars = Math.floor(this.lifeExpectancy/this.marsDiv)-Math.floor(this.age/this.marsDiv);
+
+    return `You have ${yearsToLiveMars} years to live on Mars.`
   };
 
   yearsToLiveJupiter() {
-    return Math.floor(this.lifeExpectancy/this.jupiterDiv)-Math.floor(this.age/this.jupiterDiv);
+    const yearsToLiveJupiter = Math.floor(this.lifeExpectancy/this.jupiterDiv)-Math.floor(this.age/this.jupiterDiv);
+
+    return `You have ${yearsToLiveJupiter} years to live on Jupiter.`
   };
 };

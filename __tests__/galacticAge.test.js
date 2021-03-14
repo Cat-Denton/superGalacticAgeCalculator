@@ -38,18 +38,18 @@ describe('GalacticAge', () => {
   });
 
   test('It should return expected time to live in Mercury years', () => {
-    expect(user.yearsToLiveMerc()).toEqual(134);
+    expect(user.yearsToLiveMerc()).toEqual('You have 134 years to live on Mercury.');
   });
 
   test('It should return expected time to live in Venus years', () => {
-    expect(user.yearsToLiveVenus()).toEqual(51);
+    expect(user.yearsToLiveVenus()).toEqual('You have 51 years to live on Venus.');
   });
 
   test('It should return expected time to live in Mars years', () => {
-    expect(user.yearsToLiveMars()).toEqual(17);
+    expect(user.yearsToLiveMars()).toEqual('You have 17 years to live on Mars.');
   });
 
   test('It should return expected time to live in Jupiter years', () => {
-    expect(user.yearsToLiveJupiter()).toEqual(3);
+    expect(user.yearsToLiveJupiter()).toEqual('You have 3 years to live on Jupiter.');
   });
 });
