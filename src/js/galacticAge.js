@@ -31,8 +31,12 @@ export default class GalacticAge {
 
   yearsToLiveMerc() {
     const yearsToLiveMerc = Math.floor(this.lifeExpectancy/this.mercuryDiv)-Math.floor(this.age/this.mercuryDiv);
-
-    return `You have ${yearsToLiveMerc} years to live on Mercury.`
+    // if (yearsToLiveMerc >= 0) {
+      return `You have ${yearsToLiveMerc} years to live on Mercury.`
+    // } else {
+    //   x = Math.abs(yearsToLiveMerc);
+    //   return `You should have died ${x} years ago on Mercury!`
+    // }
   };
 
   yearsToLiveVenus() {

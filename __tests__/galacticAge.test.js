@@ -52,4 +52,24 @@ describe('GalacticAge', () => {
   test('It should return expected time to live in Jupiter years', () => {
     expect(user.yearsToLiveJupiter()).toEqual('You have 3 years to live on Jupiter.');
   });
+
+  test('It should return years past life expectancy if user is older than life expectancy on Mercury', () => {
+    user.lifeExpectancy = 12;
+    expect(user.yearsToLiveMerc()).toEqual('You should have died 120 years ago on Mercury!');
+  });
+
+  test('It should return years past life expectancy if user is older than life expectancy on Venus', () => {
+    user.lifeExpectancy = 12;
+    expect(user.yearsToLiveVenus()).toEqual('You should have died 47 years ago on Venus!');
+  });
+
+  test('It should return years past life expectancy if user is older than life expectancy on Mars', () => {
+    user.lifeExpectancy = 12;
+    expect(user.yearsToLiveMars()).toEqual('You should have died 15 years ago on Mars!');
+  });
+
+  test('It should return years past life expectancy if user is older than life expectancy on Jupiter', () => {
+    user.lifeExpectancy = 12;
+    expect(user.yearsToLiveJupiter()).toEqual('You should have died 2 years ago on Jupiter!');
+  });
 });
