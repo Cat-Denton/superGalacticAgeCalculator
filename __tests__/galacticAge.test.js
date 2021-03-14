@@ -36,4 +36,20 @@ describe('GalacticAge', () => {
   test('It should return user age in Jupiter years', () => {
     expect(user.jupiterAge()).toEqual(3);
   });
+
+  test('It should return expected time to live in Mercury years', () => {
+    expect(user.yearsToLiveMerc()).toEqual(134);
+  });
+
+  test('It should return expected time to live in Venus years', () => {
+    expect(user.yearsToLiveVenus()).toEqual(51);
+  });
+
+  test('It should return expected time to live in Mars years', () => {
+    expect(user.yearsToLiveMars()).toEqual(17);
+  });
+
+  test('It should return expected time to live in Jupiter years', () => {
+    expect(user.yearsToLiveJupiter()).toEqual(3);
+  });
 });

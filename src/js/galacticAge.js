@@ -24,4 +24,20 @@ export default class GalacticAge {
   jupiterAge() {
     return Math.floor(this.age/this.jupiterDiv);
   };
+
+  yearsToLiveMerc() {
+
+  };
+
+  yearsToLiveVenus() {
+
+  };
+
+  yearsToLiveMars() {
+
+  };
+
+  yearsToLiveJupiter() {
+
+  };
 };
