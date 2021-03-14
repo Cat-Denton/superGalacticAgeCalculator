@@ -22,19 +22,19 @@ describe('GalacticAge', () => {
   });
 
   test('It should return the user age in mercury years', () => {
-    expect(user.mercuryAge()).toEqual(170);
+    expect(user.mercuryAge()).toEqual('Your age on Mercury is 170 years.');
   });
 
   test('It should return the user age in Venus years', () => {
-    expect(user.venusAge()).toEqual(66);
+    expect(user.venusAge()).toEqual('Your age on Venus is 66 years.');
   });
 
   test('It should return the user age in Mars years', () => {
-    expect(user.marsAge()).toEqual(21);
+    expect(user.marsAge()).toEqual('Your age on Mars is 21 years.');
   });
 
   test('It should return user age in Jupiter years', () => {
-    expect(user.jupiterAge()).toEqual(3);
+    expect(user.jupiterAge()).toEqual('Your age on Jupiter is 3 years.');
   });
 
   test('It should return expected time to live in Mercury years', () => {

@@ -10,19 +10,23 @@ export default class GalacticAge {
   };
 
   mercuryAge() {
-    return Math.floor(this.age/this.mercuryDiv);
+    const mercuryAge = Math.floor(this.age/this.mercuryDiv);
+    return `Your age on Mercury is ${mercuryAge} years.`;
   };
 
   venusAge() {
-    return Math.floor(this.age/this.venusDiv);
+    const venusAge = Math.floor(this.age/this.venusDiv);
+    return `Your age on Venus is ${venusAge} years.`;
   };
 
   marsAge() {
-    return Math.floor(this.age/this.marsDiv);
+    const marsAge = Math.floor(this.age/this.marsDiv);
+    return `Your age on Mars is ${marsAge} years.`;
   };
 
   jupiterAge() {
-    return Math.floor(this.age/this.jupiterDiv);
+    const jupiterAge = Math.floor(this.age/this.jupiterDiv);
+    return `Your age on Jupiter is ${jupiterAge} years.`;
   };
 
   yearsToLiveMerc() {
