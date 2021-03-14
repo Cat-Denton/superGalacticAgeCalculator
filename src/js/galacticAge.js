@@ -26,18 +26,18 @@ export default class GalacticAge {
   };
 
   yearsToLiveMerc() {
-
+    return Math.floor(this.lifeExpectancy/this.mercuryDiv)-Math.floor(this.age/this.mercuryDiv);
   };
 
   yearsToLiveVenus() {
-
+    return Math.floor(this.lifeExpectancy/this.venusDiv)-Math.floor(this.age/this.venusDiv);
   };
 
   yearsToLiveMars() {
-
+    return Math.floor(this.lifeExpectancy/this.marsDiv)-Math.floor(this.age/this.marsDiv);
   };
 
   yearsToLiveJupiter() {
-
+    return Math.floor(this.lifeExpectancy/this.jupiterDiv)-Math.floor(this.age/this.jupiterDiv);
   };
 };
